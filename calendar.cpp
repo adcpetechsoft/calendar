@@ -194,18 +194,13 @@ int main(int argc, char *argv[])
         snprintf(str01, STR_SIZE, "%s", argv[2]);
         sscanf(str01, "%i", &y);
 
-        if( calendar_fill(m, y) == P_OK)
+        if( calendar_draw(m, y) == P_OK)
         {
 
         };
 
 
-        
-
     };
-
-
-
 
 
     return 0;
