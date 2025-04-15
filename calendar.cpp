@@ -111,9 +111,9 @@ int calendar_draw(int m, int y)
 
     int end_date;
 
-    int x;
-    int y;
-    int z;
+    int i;
+    int j;
+    int k;
 
     switch(m)
     {
@@ -139,29 +139,29 @@ int calendar_draw(int m, int y)
         printf("%s %i\n", str01, y);
         printf("S\tM\tT\tW\tH\tF\tS\n");
 
-        x=1;
-        y=1;
-        z=0;
+        i=1;
+        j=1;
+        k=0;
 
-        while(x<5 && z<=end_date)
+        while(i<=5 && k<=end_date)
         {
-            y=1;
-            while(y<=7 && x<=end_date)
+            j=1;
+            while(j<=7 && k<=end_date)
             {
-                if(y==calmonth[z])
+                if(j==calmonth[k])
                 {
-                    printf("i", z);
-                    z++;
+                    printf("%i", (k+1) );
+                    k++;
                 };
 
                 printf("\t");
 
-                y++;
+                j++;
             };
 
             printf("\n");
 
-            x++;
+            i++;
         };
 
         
